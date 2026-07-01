@@ -13,6 +13,13 @@ interface Match {
   startTime?: number
 }
 
+interface PastMatch {
+  match_id: string
+  home_team: string
+  away_team: string
+  count: number
+}
+
 // Mock matches for when TxLINE is not yet connected
 const mockMatches: Match[] = [
   {
